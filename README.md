@@ -12,7 +12,7 @@
 可以通过 pip 安装这些库：
 ```bash
 pip install opencv-python numpy matplotlib
-'''
+```
 
 ## <font color=blue>**4 Affine transformation of an image    图像的仿射变换**</font>
 ```bash
@@ -87,6 +87,7 @@ show_with_matplotlib(axes[2], dst_image, 'After Affine Transformation')
 
 plt.tight_layout()
 plt.show()
+```
 
 # -
 python图像处理的作业，进行一个免费服务器的白嫖
