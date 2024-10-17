@@ -105,7 +105,7 @@ plt.show()
 
 - 编程把右图的歪斜畸变校正过来
 
-  ## <font color=blue>** Perspective transformation of an image  图像的透视变换**</font>
+  ## <font color=blue>Perspective transformation of an image  图像的透视变换</font>
 ```bash
 import cv2
 import matplotlib.pyplot as plt
