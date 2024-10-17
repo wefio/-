@@ -20,7 +20,8 @@ pip install opencv-python numpy matplotlib
 
 # <font color=red> **作业：**</font><font color=blue>**由3组对应点计算仿射变换矩阵**</font>
 
-![image](https://github.com/wefio/Triangle-Affine-Transform-And-Perspective-Transform/blob/main/pics/red_blue_triangle.png)
+![red_blue_triangle](https://github.com/user-attachments/assets/1717edd5-a1d2-45b9-ad13-70caf43f67fb)
+
 <br>Find the transformation matrix from the red triangle to the blue triangle, apply the transform, and display the red and blue triangle on the monitor screen.
 <br>找到从红色三角形到蓝色三角形的变换矩阵，应用变换，并在监视器屏幕上显示红色和蓝色三角形。
 ## <font color=blue>**Affine transformation of an image    图像的仿射变换**</font>
@@ -97,14 +98,17 @@ show_with_matplotlib(axes[2], dst_image, 'After Affine Transformation')
 plt.tight_layout()
 plt.show()
 ```
-<br><center>![red_blue_triangle](./pics/red_blue_triangle.png)</center>
+![image](https://github.com/user-attachments/assets/73e63092-83a9-4175-8eb2-181c1190360b)
+
 
 # <font color=red> **作业：**</font><font color=blue>**由4组对应点计算透视变换矩阵**</font>
 
-<br><center>![barcode](./images/barcode.png) ![barcode](./images/barcode-distorted.png)</center>
+<br><center>![barcode](https://github.com/user-attachments/assets/f3c4beca-36f7-4848-93ef-ec5e87333bdb)
+![barcode-distorted](https://github.com/user-attachments/assets/08d5b132-7546-4761-abab-27b09eeeca38)
+</center>
 <br><center></center>
 
-- 编程把右图的歪斜畸变校正过来
+- 把右图的歪斜畸变校正过来
 
   ## <font color=blue>Perspective transformation of an image  图像的透视变换</font>
 ```bash
