@@ -88,6 +88,7 @@ show_with_matplotlib(axes[2], dst_image, 'After Affine Transformation')
 plt.tight_layout()
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/a0da1a6e-83d5-48c6-a48c-a4a3cf133d9f)
 
 # -
 python图像处理的作业，进行一个免费服务器的白嫖
