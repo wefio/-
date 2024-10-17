@@ -19,7 +19,7 @@ pip install opencv-python numpy matplotlib
 <br><center>![red_blue_triangle](./pics/red_blue_triangle.png)</center>
 <br>Find the transformation matrix from the red triangle to the blue triangle, apply the transform, and display the red and blue triangle on the monitor screen.
 <br>找到从红色三角形到蓝色三角形的变换矩阵，应用变换，并在监视器屏幕上显示红色和蓝色三角形。
-## <font color=blue>**4 Affine transformation of an image    图像的仿射变换**</font>
+## <font color=blue>**Affine transformation of an image    图像的仿射变换**</font>
 ```bash
 import cv2
 import numpy as np
@@ -94,6 +94,58 @@ plt.tight_layout()
 plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/a0da1a6e-83d5-48c6-a48c-a4a3cf133d9f)
+
+### <font color=red> **作业：**</font><font color=blue>**由4组对应点计算透视变换矩阵**</font>
+
+<br><center>![barcode](./images/barcode.png) ![barcode](./images/barcode-distorted.png)</center>
+<br><center></center>
+
+- 编程把右图的歪斜畸变校正过来
+
+  ## <font color=blue>** Perspective transformation of an image  图像的透视变换**</font>
+```bash
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+
+def show_with_matplotlib(ax, img, title):
+    """Shows an image using matplotlib capabilities on a given axis"""
+    img_RGB = img[:, :, ::-1]  # Convert BGR to RGB
+    ax.imshow(img_RGB)
+    ax.set_title(title)
+    ax.axis('off')  # Hide axis
+
+# 读取输入图像
+image = cv2.imread('./images/barcode-distorted.png')
+assert image is not None, "file could not be read, check with os.path.exists()"
+
+# 定义源图像和目标图像的四个点
+pts1 = np.float32([[120, 79], [492, 55], [216, 389], [391, 439]])
+pts2 = np.float32([[84, 79], [450, 54], [250, 390], [435, 439]])
+
+# 在源图像上绘制选取的点
+for p in pts1:
+    cv2.circle(image, (int(p[0]), int(p[1])), 6, (0, 0, 255), -1)
+
+# 计算透视变换矩阵并应用透视变换
+M = cv2.getPerspectiveTransform(pts1, pts2)
+dst = cv2.warpPerspective(image, M, (500, 500))
+
+# 创建子图用于横向排列图像
+fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+
+# 显示输入图像和变换后的图像
+show_with_matplotlib(axes[0], image, 'Input')
+show_with_matplotlib(axes[1], dst, 'Output')
+
+# 调整子图之间的间距
+plt.subplots_adjust(wspace=0.3)
+
+# 显示结果
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/eafcc125-eba4-44c1-9cd6-c9e65959ff85)
+
 
 # -
 python图像处理的作业，进行一个免费服务器的白嫖
