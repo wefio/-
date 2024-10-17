@@ -17,7 +17,7 @@
 pip install opencv-python numpy matplotlib
 ```
 
-### <font color=red> **作业：**</font><font color=blue>**由3组对应点计算仿射变换矩阵**</font>
+# <font color=red> **作业：**</font><font color=blue>**由3组对应点计算仿射变换矩阵**</font>
 
 <br><center>![red_blue_triangle](./pics/red_blue_triangle.png)</center>
 <br>Find the transformation matrix from the red triangle to the blue triangle, apply the transform, and display the red and blue triangle on the monitor screen.
@@ -98,7 +98,7 @@ plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/a0da1a6e-83d5-48c6-a48c-a4a3cf133d9f)
 
-### <font color=red> **作业：**</font><font color=blue>**由4组对应点计算透视变换矩阵**</font>
+# <font color=red> **作业：**</font><font color=blue>**由4组对应点计算透视变换矩阵**</font>
 
 <br><center>![barcode](./images/barcode.png) ![barcode](./images/barcode-distorted.png)</center>
 <br><center></center>
