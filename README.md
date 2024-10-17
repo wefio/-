@@ -12,10 +12,7 @@
 可以通过 pip 安装这些库：
 ```bash
 pip install opencv-python numpy matplotlib
-
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
-python transform_triangles.py
+'''
 
 ## <font color=blue>**4 Affine transformation of an image    图像的仿射变换**</font>
 ```bash
