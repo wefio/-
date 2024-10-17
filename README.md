@@ -2,8 +2,8 @@
 
 本项目演示了如何使用 OpenCV 和 Matplotlib 计算并应用从红色三角形到蓝色三角形的仿射变换矩阵。
 
-##jupyter文件为 xxx 作业-变换.ipynb
-##以下为内容
+## jupyter文件为 xxx 作业-变换.ipynb
+## 以下为内容
 
 ## 环境设置
 
