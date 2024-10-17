@@ -108,7 +108,7 @@ plt.show()
 </center>
 <br><center></center>
 
-- 把右图的歪斜畸变校正过来
+- 把第二张图的歪斜畸变校正过来
 
   ## <font color=blue>Perspective transformation of an image  图像的透视变换</font>
 ```bash
