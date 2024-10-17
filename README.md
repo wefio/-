@@ -20,7 +20,7 @@ pip install opencv-python numpy matplotlib
 
 # <font color=red> **作业：**</font><font color=blue>**由3组对应点计算仿射变换矩阵**</font>
 
-<br><center>![red_blue_triangle](./pics/red_blue_triangle.png)</center>
+![image](https://github.com/wefio/Triangle-Affine-Transform-And-Perspective-Transform/blob/main/pics/red_blue_triangle.png)
 <br>Find the transformation matrix from the red triangle to the blue triangle, apply the transform, and display the red and blue triangle on the monitor screen.
 <br>找到从红色三角形到蓝色三角形的变换矩阵，应用变换，并在监视器屏幕上显示红色和蓝色三角形。
 ## <font color=blue>**Affine transformation of an image    图像的仿射变换**</font>
